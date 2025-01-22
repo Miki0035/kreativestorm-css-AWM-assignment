@@ -1,0 +1,31 @@
+/* Services Navbar styling*/
+.nav-menu nav{
+    background-color: #1f2937;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    gap: 3rem;
+}
+.nav-menu nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-menu a:hover{
+    background-color: #3882f6;
+    border-radius: 10px;
+}
+
+/* Digitalization section styling*/
+.services-digit{
+}
+
+/* Development section styling*/
+.services-dev{
+}
+
+/* Support section styling*/
+.services-support{
+}
