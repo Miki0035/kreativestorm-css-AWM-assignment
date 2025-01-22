@@ -1,10 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Home page</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Kreativ Flexbox</title>
+</head>
+
+<body>
+  <!--HEADER SECTION-->
+  <header>
+      <!-- HAMBURGER MENU FOR MOBILE VIEW -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+  
+      <div class="logo">
+          <img src="./images/logo.png" alt="logo" class="logo">
+      </div>
+      
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#" class="signup-botton">Contact Us</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <!--MAIN SECTION-->
+  <main>
+      <div class="container-left">
+          <h1>Our Company</h1>
+          <h2>AWM Groupe</h2>
+          <p>Empowering businesses through innovative web solutions, where creativity meets technology</p>
+          <br>
+          <button class="discover">Discover more</button>
+      </div>
+      <div class="container-right">
+          <img src="images/company.png" alt="company" class="hero-image">
+      </div>
+  </main>
+
+  <!-- FOOTER WITH SOCIAL LINKS -->
+  <footer>
+      <p>&copy; 2025 AWM Groupe. All Rights Reserved.</p>
+      <br>
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>&nbsp;
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </footer>
+</body>
 </html>

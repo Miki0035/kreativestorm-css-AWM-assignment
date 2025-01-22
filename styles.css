@@ -1,1 +1,244 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+header {
+    height: 100px;
+    background: #fffbff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+ul {
+    display: flex; 
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #009fe3;
+    display: inline-block;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #e6007e;
+    transition: all .3s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+/* HAMBURGER MENU ICON */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #039ab6;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* Hide the checkbox but keep it functional */
+.menu-toggle {
+    display: none;
+}
+
+/* Main content */
+main {
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.container-left {
+    width: 30%;
+}
+
+main h1 {
+    font-size: 36px;
+    color: #e6007e;
+    text-transform: uppercase;
+}
+
+main h2 {
+    font-size: 36px;
+    color: #009fe3;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+main p {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    line-height: 31.5px;
+}
+
+.discover {
+    padding: 15px 30px;
+    background-color: #009fe3;
+    color: black;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.signup-botton {
+    padding: 15px 30px;
+    background-color: #009fe3;
+    color: black;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+/* FOOTER STYLES */
+footer {
+    background: #fffbff;
+    font-family: 'Roboto', sans-serif;
+    color: #009fe3;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+}
+
+footer p:hover {
+    color: #3498db;
+    cursor: pointer;
+}
+
+footer a i {
+    font-size: 24px;
+    color: #e6007e;
+}
+
+footer a:hover i {
+    color: #356cb4;
+}
+
+/* MOBILE VIEW AND HAMBURGER MENU */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 175px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Show hamburger icon on mobile */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hide the menu by default on mobile */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        background-color: white;
+        left: 0;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        text-decoration: none;
+        color: #009fe3;
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* When the checkbox is checked, show the menu */
+    .menu-toggle:checked + .menu-icon + nav ul {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+
+    .hero-image {
+        width: 90%;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .container-left {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    main h1, main h2, main p {
+        font-size: 1.5rem;
+    }
+
+    .discover, .signup-botton {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 94px;
+        margin-left: -40px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        bottom: -100px;
+    }
+
+    footer a i {
+        font-size: 20px;
+    }
+}
