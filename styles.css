@@ -286,7 +286,7 @@ footer a:hover i {
   color: #356cb4;
 }
 
-/* main {
+ main {
     flex-direction: column;
     height: auto;
     align-items: center;
@@ -294,9 +294,7 @@ footer a:hover i {
     flex-wrap: wrap;
     margin-top: 80px;
   }
-    font-size: 24px;
-    color: #3882F6;
-}
+  
 
 footer a:hover i {
     color: #e6007e;
@@ -304,7 +302,7 @@ footer a:hover i {
 
 /* MOBILE VIEW AND HAMBURGER MENU */
 @media only screen and (max-width: 768px) {
-  /* body {
+ body {
     background-color: #e8e8e8;
   }
   header {
@@ -348,7 +346,7 @@ footer a:hover i {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 180px;
-  } */
+  } 
   
   .hero-image {
     width: 90%;
