@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 /* Services Navbar styling*/
 .nav-menu nav{
     background-color: #1f2937;
@@ -20,6 +21,11 @@
     border-radius: 10px;
 }
 
+.nav-menu nav{
+    position: fixed;
+    right: 0;
+}
+
 .sub-nav, .services-consult, .services-dev, .services-support{
     margin: 0 120px;
 }
@@ -33,6 +39,10 @@
     padding: 20px 0;
 }
 
+.nav-menu{
+    margin-top: 108px;
+}
+
 .description{
     width: 35%;
 }
@@ -43,7 +53,11 @@
 }
 
 h1{
-    font-size: 36px
+    font-size: 36px;
+}
+
+h1.title{
+    margin: 2rem 0;
 }
 
 .pic-des{
@@ -77,14 +91,6 @@ h1{
 
 .des ul li{
     list-style: none;
-}
-
-/* Development section styling*/
-.services-dev{
-}
-
-/* Support section styling*/
-.services-support{
 }
 
 /* Responsive Section*/
@@ -201,10 +207,10 @@ h1{
 
 @media only screen and (min-width: 1440px){
     .description{
-        width: 100%;
+        width: 50%;
     }
     .sub-nav, .services-consult, .services-dev, .services-support{
-        margin: 0 20px;
+        margin: 0 120px;
     }
 
     .pic-des{
