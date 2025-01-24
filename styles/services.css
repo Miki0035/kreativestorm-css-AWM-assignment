@@ -33,8 +33,11 @@
     padding: 20px 0;
 }
 
+.description{
+    width: 35%;
+}
+
 .services-consult p{
-    width: 50%;
     margin: 10px 0;
     font-size: 18px
 }
@@ -83,3 +86,150 @@ h1{
 /* Support section styling*/
 .services-support{
 }
+
+/* Responsive Section*/
+
+/* Mobile Phone*/
+@media only screen and (max-width: 600px){
+    .sub-nav, .services-consult, .services-dev, .services-support{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .pic-des{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .services-consult p, .services-dev p, .services-support p{
+        width: 100%;
+    }
+
+    .pic{
+        text-align: center;
+    }
+
+
+    .nav-menu nav a, .nav-menu nav{
+        padding: 10px 0;
+    }
+ 
+    .pic img {
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #3882f6;
+        box-shadow: 10px 10px 5px #3882f6;;
+    }
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 768px){
+    .description{
+        width: 100%;
+    }
+    .sub-nav, .services-consult, .services-dev, .services-support{
+        margin: 0 20px;
+    }
+
+    .pic-des{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .pic img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #3882f6;
+        box-shadow: 10px 10px 5px #3882f6;;
+    }
+
+    .pic{
+        text-align: center;
+    }
+}
+
+/* Laptops */
+
+@media only screen and (min-width: 1024px){
+    .description{
+        width: 100%;
+    }
+    .sub-nav, .services-consult, .services-dev, .services-support{
+        margin: 0 20px;
+    }
+
+    .pic-des{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    h1{
+        text-align: left;
+    }
+
+    .pic img {
+        width: 80%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #3882f6;
+        box-shadow: 10px 10px 5px #3882f6;;
+    }
+
+    .pic{
+        text-align: center;
+    }
+    .des{
+        width: 108%;
+    }
+}
+
+/* Large Screens*/
+
+@media only screen and (min-width: 1440px){
+    .description{
+        width: 100%;
+    }
+    .sub-nav, .services-consult, .services-dev, .services-support{
+        margin: 0 20px;
+    }
+
+    .pic-des{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    h1{
+        text-align: left;
+    }
+
+    .pic img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #3882f6;
+        box-shadow: 10px 10px 5px #3882f6;;
+    }
+
+    .pic{
+        text-align: center;
+    }
+    .des{
+        width: 108%;
+    }
+}
+
