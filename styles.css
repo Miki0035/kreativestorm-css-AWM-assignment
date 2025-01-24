@@ -79,7 +79,7 @@ main p {
 
 /* HIDES THE FORM UNTIL THE CHECKBOX IS CHECKED */
 .contact-form-toggle {
-  display: block;
+  display: none;
 }
 
 /* FLEX CONTAINER TO CENTER THE FORM */
