@@ -4,39 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/about-us.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <title>About Us</title>
   </head>
   <body>
+    <header>
+      <nav class="home-nav">
+        <div class="home-logo">
+          <a href="../index.html">
+            <img src="../assets/images/logo.jpg" alt="logo" />
+          </a>
+        </div>
+        <!-- Mobile Nav container -->
+        <div class="home-mobilenav-hammenu-container">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <!-- Moblie Drop down navigation -->
+          <ul class="home-mobilenav-anchor-container">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Large screen navigation -->
+        <ul class="home-large-nav-container">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>About Us</h1>
-      <section class="company-section">
-        <div class="company-info-container">
+      <section class="about-company-section">
+        <div class="about-company-info-container slide-in-from-left">
           <h2>Why AWM <sup>TM</sup></h2>
           <p>
-            <strong>AWM</strong> is a versatile and innovative company dedicated to providing
-            top-notch web development and design services. Our team of experts
-            is committed to delivering exceptional results that exceed client
-            expectations. We pride ourselves on our ability to adapt to the
-            ever-changing landscape of technology and continuously strive to
-            stay ahead of industry trends.
+            <strong>AWM</strong> is a versatile and innovative company dedicated
+            to providing top-notch web development and design services. Our team
+            of experts is committed to delivering exceptional results that
+            exceed client expectations. We pride ourselves on our ability to
+            adapt to the ever-changing landscape of technology and continuously
+            strive to stay ahead of industry trends.
           </p>
           <a href="#">LEARN MORE</a>
         </div>
-        <div class="company-team-image-container">
-          <img
-            src="../assets/images/team.jpg"
-            alt=" image of company"
-          />
+        <div class="about-company-team-image-container slide-in-from-top">
+          <img src="../assets/images/team.jpg" alt=" image of company" />
         </div>
       </section>
-      <section class="team-section">
+      <section class="about-team-section">
         <h2>Meet our Team</h2>
-        <div class="team-members-container">
+        <div class="about-team-members-container">
           <figure>
-            <img
-              src="../assets/images/adre.jpg"
-              alt="adre portrait"
-            />
+            <img src="../assets/images/adre.jpg" alt="adre portrait" />
             <figcaption>
               <h3>Andrei</h3>
               <p>Frontend Developer / Designer</p>
@@ -49,10 +72,7 @@
             </figcaption>
           </figure>
           <figure>
-            <img
-              src="../assets/images/willy.jpg"
-              alt="Willy portrait image"
-            />
+            <img src="../assets/images/willy.jpg" alt="Willy portrait image" />
             <figcaption>
               <h3>Willy</h3>
               <p>Backend Developer</p>
@@ -65,10 +85,7 @@
             </figcaption>
           </figure>
           <figure>
-            <img
-              src="../assets/images/miki.jpg"
-              alt="Miki portrait image"
-            />
+            <img src="../assets/images/miki.jpg" alt="Miki portrait image" />
             <figcaption>
               <h3>Miki</h3>
               <p>Full Stack developer</p>
@@ -76,15 +93,16 @@
                 Miki is a versatile full stack developer with 6 years of
                 experience in both frontend and backend technologies. He excels
                 in creating seamless user experiences and robust server-side
-                logic. 
+                logic. . He has a deep understanding of UI/UX design, database
+                management and API development.
               </p>
             </figcaption>
           </figure>
         </div>
       </section>
-      <section class="client-section">
+      <section class="about-client-section">
         <h2>What our clients think</h2>
-        <div class="client-container">
+        <div class="about-client-container">
           <figure>
             <img
               src="../assets/images/microsoft-svgrepo-com.svg"
