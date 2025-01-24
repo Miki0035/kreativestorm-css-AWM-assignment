@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* Services Navbar styling*/
 .nav-menu nav{
     background-color: #1f2937;
@@ -18,8 +20,63 @@
     border-radius: 10px;
 }
 
-/* Digitalization section styling*/
-.services-digit{
+.sub-nav, .services-consult, .services-dev, .services-support{
+    margin: 0 120px;
+}
+
+.sub-nav{
+    padding: 20px 0;
+}
+
+/* Consulting section styling*/
+.services-consult{
+    padding: 20px 0;
+}
+
+.description{
+    width: 35%;
+}
+
+.services-consult p{
+    margin: 10px 0;
+    font-size: 18px
+}
+
+h1{
+    font-size: 36px
+}
+
+.pic-des{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 5rem 0 0 10rem;
+}
+
+.pic img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #3882f6;
+    box-shadow: 10px 10px 5px #3882f6;;
+}
+
+.pic-support img{
+    width: 94%;
+}
+
+.des{
+    width: 100%;
+}
+
+.des ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.des ul li{
+    list-style: none;
 }
 
 /* Development section styling*/
@@ -29,3 +86,150 @@
 /* Support section styling*/
 .services-support{
 }
+
+/* Responsive Section*/
+
+/* Mobile Phone*/
+@media only screen and (max-width: 600px){
+    .sub-nav, .services-consult, .services-dev, .services-support{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .pic-des{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .services-consult p, .services-dev p, .services-support p{
+        width: 100%;
+    }
+
+    .pic{
+        text-align: center;
+    }
+
+
+    .nav-menu nav a, .nav-menu nav{
+        padding: 10px 0;
+    }
+ 
+    .pic img {
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #3882f6;
+        box-shadow: 10px 10px 5px #3882f6;;
+    }
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 768px){
+    .description{
+        width: 100%;
+    }
+    .sub-nav, .services-consult, .services-dev, .services-support{
+        margin: 0 20px;
+    }
+
+    .pic-des{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .pic img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #3882f6;
+        box-shadow: 10px 10px 5px #3882f6;;
+    }
+
+    .pic{
+        text-align: center;
+    }
+}
+
+/* Laptops */
+
+@media only screen and (min-width: 1024px){
+    .description{
+        width: 100%;
+    }
+    .sub-nav, .services-consult, .services-dev, .services-support{
+        margin: 0 20px;
+    }
+
+    .pic-des{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    h1{
+        text-align: left;
+    }
+
+    .pic img {
+        width: 80%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #3882f6;
+        box-shadow: 10px 10px 5px #3882f6;;
+    }
+
+    .pic{
+        text-align: center;
+    }
+    .des{
+        width: 108%;
+    }
+}
+
+/* Large Screens*/
+
+@media only screen and (min-width: 1440px){
+    .description{
+        width: 100%;
+    }
+    .sub-nav, .services-consult, .services-dev, .services-support{
+        margin: 0 20px;
+    }
+
+    .pic-des{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    h1{
+        text-align: left;
+    }
+
+    .pic img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #3882f6;
+        box-shadow: 10px 10px 5px #3882f6;;
+    }
+
+    .pic{
+        text-align: center;
+    }
+    .des{
+        width: 108%;
+    }
+}
+

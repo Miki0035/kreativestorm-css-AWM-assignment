@@ -1,117 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Roboto, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
-}
-
-header {
-  width: 100%;
-  background: #1f2937;
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  left: 0;
-}
-.home-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  position: relative;
-  padding: 0.5rem 2.5rem;
-}
-.home-mobilenav-hammenu-container {
-  width: 50px;
-  height: 100%;
-}
-
-.home-logo {
-  width: 90px;
-  height: 90px;
-}
-.home-logo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
-/* HAMBURGER MENU ICON */
-.menu-icon {
-  display: block;
-  font-size: 30px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: #ffffff;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-
-.home-mobilenav-anchor-container {
-  display: none;
-}
-
-.home-nav-container {
-  display: none;
-}
-
-.home-mobilenav-anchor-container li {
-  list-style-type: none;
-  width: 100%;
-  padding: 0.5rem 1rem;
-}
-.home-mobilenav-anchor-container li a {
-  font-weight: 600;
-  font-size: 18px;
-  width: 100%;
-  color: #f9faf8;
-}
-
-.home-mobilenav-anchor-container li:hover {
-  background-color: #f9faf8;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.home-mobilenav-anchor-container li:hover a {
-  color: #1f2937;
-}
-
-/* Hide the checkbox but keep it functional */
-#menu-toggle {
-  display: none;
-}
-
-/* When the checkbox is checked, show the menu */
-#menu-toggle:checked + .menu-icon + .home-mobilenav-anchor-container {
-  position: absolute;
-  width: 100%;
-  top: 100px;
-  left: 0;
-  padding: 0.5rem 2.5rem;
+/* .menu-toggle:checked + .menu-icon + nav ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: #1f2937;
-}
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+} */
 
-/* Nav for large screens */
-.home-large-nav-container {
-  display: none;
-}
-
-/* Main content */
-/* main {
+/* MAIN CONTENT STYLE*/
+main {
   display: flex;
-  height: calc(100vh - 100px);
+  height: calc(120vh - 100px);
   align-items: center;
   justify-content: center;
 }
@@ -157,23 +59,229 @@ main p {
   cursor: pointer;
 }
 
-.signup-botton {
-  padding: 15px 30px;
-  background-color: #009fe3;
-  color: black;
-  outline: none;
+/* FORMULAR  */
+/* BUTTON STYLES FOR "CONTACT US" */
+.signup-button {
+  display: inline-block;
+  background-color: #3882f6;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
   border: none;
-  font-weight: 600;
-  border-radius: 15px;
-} */
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.signup-button:hover {
+  background-color: #009fe3;
+}
+
+/* HIDES THE FORM UNTIL THE CHECKBOX IS CHECKED */
+.contact-form-toggle {
+  display: block;
+}
+
+/* FLEX CONTAINER TO CENTER THE FORM */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* FORM WRAPPER WILL BE VISIBLE WHEN THE CHECKBOX IS CHECKED */
+.contact-form-toggle:checked + .form-wrapper {
+  display: block;
+}
+
+/* STYLES FOR THE FORM */
+.form-wrapper {
+  display: none;
+  width: 50%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FORM LABEL STYLES */
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+/* INPUT AND TEXTAREA STYLES */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* BUTTON STYLES IN THE FORM */
+.contact-form button {
+  background-color: #3882f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+/* BUTTON STYLES FOR "DISCOVER MORE" */
+.discover-label {
+  display: inline-block;
+  background-color: #3882f6;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.discover-label:hover {
+  background-color: #45a049;
+}
+
+/* HIDES THE TESTIMONIALS UNTIL THE "DISCOVER MORE" BUTTON IS CLICKED */
+.discover-toggle {
+  display: none;
+}
+
+.testimonials-wrapper {
+  display: none;
+  width: 80%;
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* SHOWS THE TESTIMONIALS WHEN THE CHECKBOX IS CHECKED */
+.discover-toggle:checked + .testimonials-wrapper {
+  display: block;
+}
+
+/* TESTIMONIALS STYLES */
+.testimonial {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.testimonial p {
+  margin: 5px 0;
+}
+.testimonials-container {
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.discover-label {
+  cursor: pointer;
+  background-color: #0073e6;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+}
+
+.discover-label:hover {
+  background-color: #005bb5;
+}
+
+.discover-toggle {
+  display: none;
+}
+
+.discover-toggle:checked ~ .carousel {
+  display: block;
+}
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  display: none;
+  max-width: 300px;
+  overflow: hidden;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.carousel-item:nth-child(odd) {
+  background-color: #e5e7eb;
+}
+
+/* ANIMATION FOR SLIDE*/
+@keyframes slide {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.discover-toggle:checked ~ .carousel .carousel-track {
+  animation: slide 10s infinite;
+}
 
 /* FOOTER STYLES */
 footer {
-  background: #fffbff;
+  background: #1f2937;
   font-family: "Roboto", sans-serif;
-  color: #009fe3;
+  color: #e5e7eb;
   text-align: center;
   padding: 10px 20px;
+  position: relative;
   width: 100%;
 }
 
@@ -191,41 +299,46 @@ footer a:hover i {
   color: #356cb4;
 }
 
-/* MOBILE VIEW AND HAMBURGER MENU */
-@media screen and (min-width: 768px) {
-  .home-nav {
-    align-items: center;
-    padding: 0.5rem 10%;
-  }
-  .home-mobilenav-hammenu-container {
-    display: none;
-  }
-  .home-large-nav-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  .home-large-nav-container li {
-    list-style-type: none;
-    font-size: 18px;
-  }
-  .home-large-nav-container li a {
-    color: #f9faf8;
-    font-weight: 600;
-    width: 100%;
-  }
-
-  .home-large-nav-container li a:hover {
-    color: #f9faf881;
-  }
-
-  /* main {
+/* main {
     flex-direction: column;
     height: auto;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 80px;
+  }
+    font-size: 24px;
+    color: #3882F6;
+}
+
+footer a:hover i {
+    color: #e6007e;
+}
+
+/* MOBILE VIEW AND HAMBURGER MENU */
+@media only screen and (max-width: 768px) {
+  /* body {
+    background-color: #e8e8e8;
+  }
+  header {
+    height: 240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu-icon {
+    display: block;
+    color: #3882f6;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    background-color: #e8e8e8;
+    left: 0;
   }
 
   .hero-image {
@@ -235,10 +348,31 @@ footer a:hover i {
     margin-top: 20px;
   }
 
-  .container-left {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+  nav ul li a:hover {
+    background-color: #f1f1f1;
+  }
+  .menu-toggle:checked + .menu-icon + nav ul {
+    display: block;
+  }
+  main {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 180px;
+  } */
+  
+  .hero-image {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  footer {
+    padding: 15px 10px;
+    bottom: -100px;
   }
 
   main h1,
@@ -256,9 +390,13 @@ footer a:hover i {
   .logo {
     width: 70px;
     height: 70px;
-    margin-bottom: 94px;
-    margin-left: -40px;
-  } */
+    margin-top: 5px;
+    margin-bottom: 190px;
+    margin-left: -100px;
+  }
+  .form-wrapper {
+    width: 65%;
+  }
 
   footer {
     padding: 15px 10px;
