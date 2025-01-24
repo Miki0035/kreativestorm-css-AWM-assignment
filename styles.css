@@ -59,79 +59,66 @@ main p {
   cursor: pointer;
 }
 
-/* FORMULAR  */
-/* BUTTON STYLES FOR "CONTACT US" */
-.signup-button {
-  display: inline-block;
-  background-color: #3882f6;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.signup-button:hover {
-  background-color: #009fe3;
-}
-
-/* HIDES THE FORM UNTIL THE CHECKBOX IS CHECKED */
-.contact-form-toggle {
-  display: none;
-}
-
-/* FLEX CONTAINER TO CENTER THE FORM */
-.form-container {
+details{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
+      flex-direction: column;
+      align-items: center;
 }
 
-/* FORM WRAPPER WILL BE VISIBLE WHEN THE CHECKBOX IS CHECKED */
-.contact-form-toggle:checked + .form-wrapper {
-  display: block;
-}
-
-/* STYLES FOR THE FORM */
-.form-wrapper {
-  display: none;
-  width: 50%;
-  background-color: #f4f4f4;
-  padding: 20px;
+/* Style for the summary button */
+details summary {
+  cursor: pointer;
+  background-color: #0073e6;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: none;
 }
 
-/* FORM LABEL STYLES */
-.contact-form label {
+/* Style for the input fields */
+form.contact-form label {
   display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
 }
 
-/* INPUT AND TEXTAREA STYLES */
-.contact-form input,
-.contact-form textarea {
+form.contact-form input,
+form.contact-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
-/* BUTTON STYLES IN THE FORM */
-.contact-form button {
-  background-color: #3882f6;
+/* Style for the submit button */
+form.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
   color: white;
-  padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
-  width: 100%;
+  transition: background-color 0.3s ease;
 }
+
+form.contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Style for textarea */
+form.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
 
 .contact-form button:hover {
   background-color: #45a049;
