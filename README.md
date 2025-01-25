@@ -18,7 +18,6 @@ Thanks to these wonderful people for contributing to this project
 
 - HTML
 - CSS
-- HTML
 
 ## 🌐 Website URL
 
