@@ -21,18 +21,15 @@
           <img src="./assets/images/logo.jpg" alt="logo" />
         </a>
       </div>
-      <!-- Mobile Nav container -->
       <div class="home-mobilenav-hammenu-container">
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <!-- Moblie Drop down navigation -->
         <ul class="home-mobilenav-anchor-container">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./pages/about-us.html">About Us</a></li>
           <li><a href="./pages/services.html">Services</a></li>
         </ul>
       </div>
-      <!-- Large screen navigation -->
       <ul class="home-large-nav-container">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./pages/about-us.html">About Us</a></li>
@@ -41,73 +38,71 @@
     </nav>
   </header>
   <br><br>
+
   <!-- MAIN SECTION -->
   <main>
-    <div class="container-left">
-      <h1>Our Company</h1>
-      <br>
-      <h2>AWM Groupe</h2>
-      <br>
-      <p>
-        &nbsp;Empowering businesses through innovative web solutions, where
-        creativity meets technology
-      </p>
-      <br />
-      <!-- BUTTON TO TRIGGER THE DISPLAY OF THE TESTIMONIALS -->
-      <div class="testimonials-container">
-        <input type="checkbox" id="discover-toggle" class="discover-toggle" />
-        <label for="discover-toggle" class="discover-label">Discover more</label>
-
-        <div class="carousel">
-          <div class="carousel-track">
-            <div class="carousel-item">
-              <p>
-                "AWM Groupe's expertise and innovation transformed our
-                business."
-              </p>
-              <p><b>Bill Gates</b></p>
-            </div>
-            <div class="carousel-item">
-              <p>
-                "AWM Groupe is the cornerstone of our web success. Their
-                passion and dedication are unmatched."
-              </p>
-              <p><b>Elon Musk</b></p>
-            </div>
-            <div class="carousel-item">
-              <p>
-                "Thanks to AWM Groupe, we achieved remarkable growth. They
-                turned our vision into reality."
-              </p>
-              <p><b>Sundar Pichai</b></p>
-            </div>
-          </div>
+    <section class="leftright">
+      <div class="container-left">
+        <h1>Our Company</h1>
+        <br>
+        <h2>AWM Groupe</h2>
+        <br>
+        <p>
+          Empowering businesses through innovative web solutions, where creativity meets technology.
+        </p>
+        <br />
+        <div class="testimonials-container">
+          <label for="discover-toggle" class="discover-label">Discover more</label>
         </div>
       </div>
-    </div>
-    <br>
-    <div class="container-right">
-      <img src="assets/images/company.png" alt="company" class="hero-image" />
-    </div>
+      <br>
+      <div class="container-right">
+        <img src="assets/images/company.png" alt="company" class="hero-image" />
+      </div>
+    </section>
+
+    <section class="posibility_section">
+      <h1 class="posibility">Our Possibility</h1>
+
+      <div class="images-container">
+        <div class="image-item">
+          <img src="assets/images/Support.png" alt="Image 1">
+          <p class="image-text">web developing</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/consulting.jpg" alt="Image 2">
+          <p class="image-text">testing</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/web-dev.webp" alt="Image 3">
+          <p class="image-text">debugging</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/digitalization.jpg" alt="Image 4">
+          <p class="image-text">hosting</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="quote-section">
+      <div>
+        <blockquote>
+          "Success is not the key to happiness. Happiness is the key to success."
+        </blockquote>
+<br>
+        <cite><b>- Albert Schweitzer</b></cite>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-text">
+        <p>Join us and elevate your business!</p>
+      </div>
+      <button class="cta-btn">Sign Up</button>
+    </section>
   </main>
-  <br /><br />
-  <!-- FORM THAT WILL APPEAR WHEN "CONTACT US" IS CLICKED -->
-  <details>
-    <summary>Let's discuss</summary>
-    <form class="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-  </details>
-  <br /><br />
+  <br>
   <!-- FOOTER WITH SOCIAL LINKS -->
   <footer>
     <p>&copy; 2025 AWM Groupe. All Rights Reserved.</p>
