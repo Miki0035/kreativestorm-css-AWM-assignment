@@ -5,8 +5,15 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+}
+
+body {
   font-family: Roboto, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
+}
+
+footer {
+  font-family: inherit;
 }
 
 h1 {
@@ -73,6 +80,9 @@ h2 sup {
   margin: 5rem 0rem;
   background-color: #1f2937;
 }
+.about-team-section h2 {
+  color: #ffffff;
+}
 .about-team-members-container {
   display: flex;
   flex-direction: column;
@@ -114,10 +124,11 @@ h2 sup {
 .about-client-section {
   width: 100%;
   height: 100%;
-  margin: 5rem 0rem;
+  padding: 4% 2%;
 }
 .about-client-container {
   display: flex;
+  padding: 2rem 0rem;
   flex-direction: column;
   align-items: center;
   gap: 50px;
@@ -279,6 +290,12 @@ h2 sup {
     width: 100%;
   }
 
+  .about-team-section {
+    padding: 2.5rem 2rem;
+    margin: 5rem 0rem;
+    background-color: #1f2937;
+  }
+
   .about-team-members-container {
     flex-direction: row;
     justify-content: space-evenly;
@@ -291,6 +308,11 @@ h2 sup {
   .about-team-members-container figure img {
     width: 100%;
     height: 450px;
+  }
+
+  .about-client-section {
+    margin-bottom: 3rem;
+    padding: 1.2rem 2rem;
   }
 
   .about-client-container {
