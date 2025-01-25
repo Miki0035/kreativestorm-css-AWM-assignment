@@ -1,116 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="nav.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="styles.css" />
-  <title>Home Page</title>
-</head>
-
-<body>
-  <!--HEADER SECTION-->
-  <header>
-    <nav class="home-nav">
-      <div class="home-logo">
-        <a href="./index.html">
-          <img src="./assets/images/logo.jpg" alt="logo" />
-        </a>
-      </div>
-      <div class="home-mobilenav-hammenu-container">
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <ul class="home-mobilenav-anchor-container">
+  <body>
+    <!--HEADER SECTION-->
+    <header>
+      <nav class="home-nav">
+        <div class="home-logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="home-mobilenav-hammenu-container">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon"></label>
+          <ul class="home-mobilenav-anchor-container">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about-us.html">About Us</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+          </ul>
+        </div>
+        <ul class="home-large-nav-container">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./pages/about-us.html">About Us</a></li>
           <li><a href="./pages/services.html">Services</a></li>
         </ul>
-      </div>
-      <ul class="home-large-nav-container">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/about-us.html">About Us</a></li>
-        <li><a href="./pages/services.html">Services</a></li>
-      </ul>
-    </nav>
-  </header>
-  <br><br>
-
-  <!-- MAIN SECTION -->
-  <main>
-    <section class="leftright">
-      <div class="container-left">
-        <h1>Our Company</h1>
-        <br>
-        <h2>AWM Groupe</h2>
-        <br>
-        <p>
-          Empowering businesses through innovative web solutions, where creativity meets technology.
-        </p>
-        <br />
-        <div class="testimonials-container">
-          <label for="discover-toggle" class="discover-label">Discover more</label>
+      </nav>
+    </header>
+    <!-- MAIN SECTION -->
+    <main>
+      <section class="leftright">
+        <div class="container-left">
+          <h1>AWM Groupe</h1>
+          <p>
+            Empowering businesses through innovative web solutions, where
+            creativity meets technology.
+          </p>
+          <a class="discover-label">Sign Up</a>
         </div>
-      </div>
-      <br>
-      <div class="container-right">
-        <img src="assets/images/company.png" alt="company" class="hero-image" />
-      </div>
-    </section>
-
-    <section class="posibility_section">
-      <h1 class="posibility">Our Possibility</h1>
-
-      <div class="images-container">
-        <div class="image-item">
-          <img src="assets/images/Support.png" alt="Image 1">
-          <p class="image-text">web developing</p>
+        <div class="container-right">
+          <img
+            src="assets/images/company.png"
+            alt="company"
+            class="hero-image"
+          />
         </div>
-        <div class="image-item">
-          <img src="assets/images/consulting.jpg" alt="Image 2">
-          <p class="image-text">testing</p>
+      </section>
+
+      <section class="posibility_section">
+        <h1 class="posibility">Our Experties</h1>
+
+        <div class="images-container">
+          <div class="image-item">
+            <img src="assets/images/Support.png" alt="Image 1" />
+            <p class="image-text">web developing</p>
+          </div>
+          <div class="image-item">
+            <img src="assets/images/consulting.jpg" alt="Image 2" />
+            <p class="image-text">testing</p>
+          </div>
+          <div class="image-item">
+            <img src="assets/images/web-dev.webp" alt="Image 3" />
+            <p class="image-text">debugging</p>
+          </div>
+          <div class="image-item">
+            <img src="assets/images/digitalization.jpg" alt="Image 4" />
+            <p class="image-text">hosting</p>
+          </div>
         </div>
-        <div class="image-item">
-          <img src="assets/images/web-dev.webp" alt="Image 3">
-          <p class="image-text">debugging</p>
+      </section>
+
+      <section class="quote-section">
+        <div>
+          <blockquote>
+            "The purpose of human life is to serve, and to show compassion and
+            the will to help others. True happiness is found in helping others
+            and making a positive impact in their lives."
+          </blockquote>
+          <cite><b>- Albert Schweitzer</b></cite>
         </div>
-        <div class="image-item">
-          <img src="assets/images/digitalization.jpg" alt="Image 4">
-          <p class="image-text">hosting</p>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-container">
+          <div class="cta-text">
+            <h4>Join us and elevate your business!</h4>
+            <p>Signup for our product by clicking</p>
+          </div>
+          <button class="cta-btn">Sign Up</button>
         </div>
-      </div>
-    </section>
-
-
-    <section class="quote-section">
-      <div>
-        <blockquote>
-          "Success is not the key to happiness. Happiness is the key to success."
-        </blockquote>
-<br>
-        <cite><b>- Albert Schweitzer</b></cite>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="cta-text">
-        <p>Join us and elevate your business!</p>
-      </div>
-      <button class="cta-btn">Sign Up</button>
-    </section>
-  </main>
-  <br>
-  <!-- FOOTER WITH SOCIAL LINKS -->
-  <footer>
-    <p>&copy; 2025 AWM Groupe. All Rights Reserved.</p>
-    <br />
-    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>&nbsp;
-    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;
-    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-  </footer>
-</body>
-
+      </section>
+    </main>
+    <!-- FOOTER WITH SOCIAL LINKS -->
+    <footer>
+      <p>&copy; 2025 AWM Groupe. All Rights Reserved.</p>
+      <br />
+      <a href="https://github.com/" target="_blank"
+        ><i class="fab fa-github"></i></a
+      >&nbsp;
+      <a href="https://www.linkedin.com/" target="_blank"
+        ><i class="fab fa-linkedin"></i></a
+      >&nbsp;
+      <a href="https://www.instagram.com/" target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </footer>
+  </body>
 </html>

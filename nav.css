@@ -23,12 +23,12 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   position: relative;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 2rem;
 }
 .home-mobilenav-hammenu-container {
-  width: 50px;
+  width: 100px;
   height: 100%;
 }
 
@@ -45,7 +45,7 @@ header {
 /* HAMBURGER MENU ICON STYLE*/
 .menu-icon {
   display: block;
-  font-size: 30px;
+  font-size: 40px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -90,6 +90,10 @@ header {
   display: none;
 }
 
+.menu-icon::before {
+  content: "☰";
+}
+
 /* When the checkbox is checked, show the menu */
 #menu-toggle:checked + .menu-icon + .home-mobilenav-anchor-container {
   position: absolute;
@@ -103,39 +107,40 @@ header {
   background-color: #1f2937;
 }
 
+#menu-toggle:checked + .menu-icon::before {
+  content: "✖";
+}
+
 /* Nav for large screens */
 .home-large-nav-container {
   display: none;
 }
 
-
-
 /* MOBILE VIEW AND HAMBURGER MENU */
 @media screen and (min-width: 768px) {
-    .home-nav {
-      align-items: center;
-      padding: 0.5rem 10%;
-    }
-    .home-mobilenav-hammenu-container {
-      display: none;
-    }
-    .home-large-nav-container {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-    .home-large-nav-container li {
-      list-style-type: none;
-      font-size: 18px;
-    }
-    .home-large-nav-container li a {
-      color: #f9faf8;
-      font-weight: 600;
-      width: 100%;
-    }
-  
-    .home-large-nav-container li a:hover {
-      color: #f9faf881;
-    }
+  .home-nav {
+    align-items: center;
+    padding: 0.5rem 10%;
   }
-  
+  .home-mobilenav-hammenu-container {
+    display: none;
+  }
+  .home-large-nav-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .home-large-nav-container li {
+    list-style-type: none;
+    font-size: 18px;
+  }
+  .home-large-nav-container li a {
+    color: #f9faf8;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .home-large-nav-container li a:hover {
+    color: #f9faf881;
+  }
+}
