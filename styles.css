@@ -1,14 +1,8 @@
-
-/* .menu-toggle:checked + .menu-icon + nav ul {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 1000;
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* MAIN CONTENT STYLE*/
 main {
@@ -16,12 +10,13 @@ main {
   height: calc(120vh - 100px);
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
 }
-
 .hero-image {
   width: 500px;
   height: 400px;
   border-radius: 50%;
+  margin-right: -10px;
 }
 
 .container-left {
@@ -48,6 +43,8 @@ main p {
   line-height: 31.5px;
 }
 
+/*DISCOVER PART STYLE*/
+
 .discover {
   padding: 15px 30px;
   background-color: #009fe3;
@@ -59,13 +56,12 @@ main p {
   cursor: pointer;
 }
 
-details{
+details {
   display: flex;
-      flex-direction: column;
-      align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Style for the summary button */
 details summary {
   cursor: pointer;
   background-color: #0073e6;
@@ -77,7 +73,6 @@ details summary {
   border: none;
 }
 
-/* Style for the input fields */
 form.contact-form label {
   display: block;
   margin-bottom: 5px;
@@ -96,11 +91,10 @@ form.contact-form textarea {
   box-sizing: border-box;
 }
 
-/* Style for the submit button */
 form.contact-form button {
   width: 100%;
   padding: 12px;
-  background-color: #4CAF50;
+  background-color: #0073e6;
   color: white;
   border: none;
   border-radius: 5px;
@@ -113,7 +107,6 @@ form.contact-form button:hover {
   background-color: #45a049;
 }
 
-/* Style for textarea */
 form.contact-form textarea {
   min-height: 150px;
   resize: vertical;
@@ -123,6 +116,7 @@ form.contact-form textarea {
 .contact-form button:hover {
   background-color: #45a049;
 }
+
 /* BUTTON STYLES FOR "DISCOVER MORE" */
 .discover-label {
   display: inline-block;
@@ -135,10 +129,6 @@ form.contact-form textarea {
   font-size: 16px;
   border-radius: 10px;
 }
-.discover-label:hover {
-  background-color: #45a049;
-}
-
 /* HIDES THE TESTIMONIALS UNTIL THE "DISCOVER MORE" BUTTON IS CLICKED */
 .discover-toggle {
   display: none;
@@ -159,7 +149,7 @@ form.contact-form textarea {
 }
 
 /* SHOWS THE TESTIMONIALS WHEN THE CHECKBOX IS CHECKED */
-.discover-toggle:checked + .testimonials-wrapper {
+.discover-toggle:checked+.testimonials-wrapper {
   display: block;
 }
 
@@ -172,10 +162,13 @@ form.contact-form textarea {
 .testimonial p {
   margin: 5px 0;
 }
+
 .testimonials-container {
   position: relative;
   margin: 20px auto;
   text-align: center;
+  width: 220px;
+  margin-left: -45px;
 }
 
 .discover-label {
@@ -198,7 +191,7 @@ form.contact-form textarea {
   display: none;
 }
 
-.discover-toggle:checked ~ .carousel {
+.discover-toggle:checked~.carousel {
   display: block;
 }
 
@@ -239,25 +232,29 @@ form.contact-form textarea {
 
 /* ANIMATION FOR SLIDE*/
 @keyframes slide {
+
   0%,
   20% {
     transform: translateX(0);
   }
+
   25%,
   45% {
     transform: translateX(-100%);
   }
+
   50%,
   70% {
     transform: translateX(-200%);
   }
+
   75%,
   100% {
     transform: translateX(0);
   }
 }
 
-.discover-toggle:checked ~ .carousel .carousel-track {
+.discover-toggle:checked~.carousel .carousel-track {
   animation: slide 10s infinite;
 }
 
@@ -279,75 +276,82 @@ footer p:hover {
 
 footer a i {
   font-size: 24px;
-  color: #e6007e;
+  color: #e5e7eb;
 }
 
 footer a:hover i {
   color: #356cb4;
 }
 
- main {
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 80px;
-  }
-  
-
 footer a:hover i {
-    color: #e6007e;
+  color: #e6007e;
 }
 
 /* MOBILE VIEW AND HAMBURGER MENU */
 @media only screen and (max-width: 768px) {
- body {
+
+  body {
     background-color: #e8e8e8;
   }
+
   header {
-    height: 240px;
+    height: 96px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
+  /* MOBILE MENU HAMBURGER ICON*/
   .menu-icon {
     display: block;
     color: #3882f6;
+    font-size: 30px;
+    cursor: pointer;
   }
+
   nav ul {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 100px;
+    top: 80px;
     background-color: #e8e8e8;
     left: 0;
+    padding: 0;
   }
 
-  .hero-image {
-    width: 90%;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
+  nav ul li {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  nav ul li a {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
 
   nav ul li a:hover {
     background-color: #f1f1f1;
   }
-  .menu-toggle:checked + .menu-icon + nav ul {
+
+  .menu-toggle:checked+.menu-icon+nav ul {
     display: block;
   }
+
   main {
     flex-direction: column;
-    height: auto;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 180px;
-  } 
-  
+    height: auto;
+    margin-top: 290px;
+  }
+
   .hero-image {
     width: 90%;
     height: auto;
@@ -355,40 +359,50 @@ footer a:hover i {
     margin-top: 20px;
   }
 
+  .discover-label {
+    cursor: pointer;
+    background-color: #0073e6;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+  }
+
   footer {
     padding: 15px 10px;
-    bottom: -100px;
+    position: relative;
+    bottom: 0;
+  }
+
+  footer a i {
+    font-size: 20px;
   }
 
   main h1,
   main h2,
   main p {
     font-size: 1.5rem;
+    text-align: center;
   }
-
   .discover,
   .signup-botton {
     padding: 10px 20px;
     font-size: 1rem;
+    cursor: pointer;
   }
-
   .logo {
     width: 70px;
     height: 70px;
     margin-top: 5px;
-    margin-bottom: 190px;
+    margin-bottom: 20px;
     margin-left: -100px;
   }
+
   .form-wrapper {
-    width: 65%;
-  }
-
-  footer {
-    padding: 15px 10px;
-    bottom: -100px;
-  }
-
-  footer a i {
-    font-size: 20px;
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
