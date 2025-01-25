@@ -96,10 +96,14 @@ h1.title{
 /* Responsive Section*/
 
 /* Mobile Phone*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .sub-nav, .services-consult, .services-dev, .services-support{
         margin: 0;
         padding: 10px;
+    }
+
+    .nav-menu nav {
+        display: none;
     }
 
     .pic-des{
@@ -140,6 +144,10 @@ h1.title{
     .description{
         width: 100%;
     }
+    .nav-menu nav {
+        display: none;
+    }
+
     .sub-nav, .services-consult, .services-dev, .services-support{
         margin: 0 20px;
     }
@@ -173,6 +181,10 @@ h1.title{
     .description{
         width: 100%;
     }
+    .nav-menu nav {
+        display: block;
+    }
+
     .sub-nav, .services-consult, .services-dev, .services-support{
         margin: 0 20px;
     }
